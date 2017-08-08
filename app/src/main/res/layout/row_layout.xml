@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/player_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/text_margin"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/player_image"
+            android:layout_width="@dimen/image_dimensions"
+            android:layout_height="@dimen/image_dimensions" />
+
+        <TextView
+            android:id="@+id/player_name"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/text_margin"
+            android:layout_toEndOf="@+id/player_image"
+            tools:text="player name" />
+
+        <TextView
+            android:id="@+id/player_role"
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/player_name"
+            android:layout_centerVertical="true"
+            tools:text="position" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
